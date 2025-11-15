@@ -1,4 +1,4 @@
-import pygame
+import pygame # type: ignore
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from logger import log_state
 
