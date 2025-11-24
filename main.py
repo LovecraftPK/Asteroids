@@ -1,18 +1,7 @@
 import pygame  # type: ignore
 from constants import *
-
 import sys
-
-if sys.platform == "emscripten":
-
-    def log_state(*args, **kwargs):
-        pass
-
-    def log_event(*args, **kwargs):
-        pass
-else:
-    #from logger import log_state, log_event
-
+from logger import log_state, log_event
 from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField

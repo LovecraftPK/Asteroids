@@ -2,7 +2,7 @@ import pygame # type: ignore
 import random
 from circleshape import CircleShape
 from constants import LINE_WIDTH , ASTEROID_MIN_RADIUS, SCREEN_HEIGHT, SCREEN_WIDTH
-#from logger import log_event
+from logger import log_event
 
 class Asteroid(CircleShape):
     def __init__(self, x, y, radius):
