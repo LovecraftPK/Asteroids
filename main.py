@@ -1,7 +1,7 @@
 import pygame  # type: ignore
 from constants import *
 import sys
-from logger import log_state, log_event
+#from logger import log_state, log_event
 from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
@@ -52,7 +52,7 @@ def main():
     final_time = 0
 
     while True:
-        log_state()
+        #log_state()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -121,7 +121,7 @@ def main():
 
             for asteroid in asteroids:
                 if asteroid.collides_with(player):
-                    log_event("player_hit")
+                    #log_event("player_hit")
                     print("Game over!")
                     print(f"Final Score = {score}")
                     game_over = True
@@ -135,7 +135,7 @@ def main():
                 for asteroid in asteroids:
                     for shot in shots:
                         if asteroid.collides_with(shot):
-                            log_event("asteroid_shot")
+                            #log_event("asteroid_shot")
                             asteroid.split()
                             score += 1
                             shot.kill()
